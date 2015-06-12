@@ -87,15 +87,20 @@
         </TableRow>
         <TableRow>
             <Button
+                android:text="←"
+                android:id="@+id/numback" />
+            <Button
                 android:text="C"
-                android:id="@+id/numc"
-                android:layout_span="2"/>
+                android:id="@+id/numc" />
             <Button
                 android:text="="
                 android:id="@+id/numequal"
                 android:layout_span="2"/>
         </TableRow>
     </TableLayout>
-
+<!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/test1"/>-->
 
 </LinearLayout>
