@@ -1,11 +1,101 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/in"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+
+        <TableRow>
+            <Button
+                android:text="7"
+                android:id="@+id/num7" />
+            <Button
+                android:text="8"
+                android:id="@+id/num8" />
+            <Button
+                android:text="9"
+                android:id="@+id/num9" />
+            <Button
+                android:text="/"
+                android:id="@+id/numdiv" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="4"
+                android:id="@+id/num4" />
+            <Button
+                android:text="5"
+                android:id="@+id/num5" />
+            <Button
+                android:text="6"
+                android:id="@+id/num6" />
+            <Button
+                android:text="*"
+                android:id="@+id/nummult" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="1"
+                android:id="@+id/num1" />
+            <Button
+                android:text="2"
+                android:id="@+id/num2" />
+            <Button
+                android:text="3"
+                android:id="@+id/num3" />
+            <Button
+                android:text="+"
+                android:id="@+id/numplus" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="0"
+                android:id="@+id/num0"/>
+            <Button
+                android:text="00"
+                android:id="@+id/num00"/>
+            <Button
+                android:text="."
+                android:id="@+id/nudot" />
+            <Button
+                android:text="-"
+                android:id="@+id/nummin" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="C"
+                android:id="@+id/numc"
+                android:layout_span="2"/>
+            <Button
+                android:text="="
+                android:id="@+id/numequal"
+                android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
