@@ -127,7 +127,7 @@ public class MainActivity extends Activity{
                         dotfree=true;
                     } else {
                         Toast.makeText(MainActivity.this, "연산이 잘못되었습니다.", Toast.LENGTH_SHORT).show();
-                    }
+                    }//end else
                     break;
                 case R.id.nummin :
                     if(OperationCheck(input.getText().toString())==false){
@@ -180,9 +180,9 @@ public class MainActivity extends Activity{
                     }else {
                         result.setText(input.getText().toString());
                     }//end else
-                }
-            }
-        }
+                }//end switch
+            }//end if
+        }//onClick
 
         public boolean OperationCheck(String a){
             if(a.endsWith("+") || a.endsWith("-") || a.endsWith("*") || a.endsWith("/") ) {
@@ -190,7 +190,7 @@ public class MainActivity extends Activity{
             } else {
                 return false;
             }//end else
-        }
+        }//OperationCheck
 
         public boolean NothingOperationCheck(String a){
             if(input.getText().toString().contains("+")){
@@ -205,6 +205,6 @@ public class MainActivity extends Activity{
                 return false;
             }//end else
 
-        }
+        }//NothingOperationCheck
     };
-}
+}//class

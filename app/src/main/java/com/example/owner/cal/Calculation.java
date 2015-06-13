@@ -85,6 +85,7 @@ public class Calculation {
                     do {
                             num = num * 10 + exp[i++] - '0';
                     } while (i < exp.length && isNumeric(exp[i]));
+
                     stack.push(num);
                     i--;
 //
@@ -122,8 +123,9 @@ public class Calculation {
                 num = (double)stack.pop();
                 if(num!=0){
                     stack.push((double)stack.pop() / num);}
-            }
-        }
+            }//end else
+        }//end for
         return (double)stack.pop();
-    }
+    }//postfixCalc
+
 }//class
